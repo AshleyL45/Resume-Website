@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <title>CV - Mon Nom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Container principal -->
+    <div class="container">
+        <header>
+            
+
+
+            
+        </header>
+        <!-- Panneau de gauche -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Images/portrait.jpg" alt="Photo de profil">
+                <h1>Mon Nom</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo leo diam. Nulla tristique nisl eget nisi tempor tincidunt. Proin non sapien nisi. Curabitur accumsan mollis lacus et efficitur.</p>
+            </div>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Adresse : 123 Rue Exemple, 75000 Paris</li>
+                    <li>Email : monemail@example.com</li>
+                    <li>Téléphone : 01 23 45 67 89</li>
+                </ul>
+            </div>
+
+            <div class="competences">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>Compétence 1</li>
+                    <li>Compétence 2</li>
+                    <li>Compétence 3</li>
+                    <li>Compétence 4</li>
+                    <li>Compétence 5</li>
+                </ul>
+            </div>
+
+            <!-- Tableau -->
+            <div class="table-container">
+                <h2>Projets Réalisés</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom du Projet</th>
+                            <th>Technologies utilisées</th>
+                            <th>Année</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.google.com/" target="_blank" class="projet1">Projet 1</a></td>
+                            <td>Technologie 1 Technologie 2</td>
+                            <td>XXXX</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.google.com/" target="_blank" class="projet2">Projet 2</a></td>
+                            <td>Technologie 1 Technologie 2</td>
+                            <td>XXXX</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.google.com/" target="_blank" class="projet3">Projet 3</a></td>
+                            <td>Technologie 1 Technologie 2 Technologie 3</td>
+                            <td>XXXX</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+
+        <!-- Partie centrale -->
+        <main class="main-content">
+            <section class="experiences_pro">
+                <h2>Expériences Professionnelles</h2>
+                <div class="experiences">
+                    <h3>Expérience 1</h3>
+                    <p><strong>AAAA - AAAA</strong> - Ville, Pays</p>
+                    <ul>
+                        <li>- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>- Aenean commodo leo diam. Nulla tristique nisl eget nisi tempor tincidunt.</li>
+                        <li>- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+
+                <div class="experiences">
+                    <h3>Expérience 2</h3>
+                    <p><strong>AAAA - AAAA</strong> - Ville, Pays</p>
+                    <ul>
+                        <li>- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>- Aenean commodo leo diam. Nulla tristique nisl eget nisi tempor tincidunt.</li>
+                        <li>- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Formations</h2>
+                <div class="formations">
+                    <h3>Formation 1</h3>
+                    <p><strong>AAAA - AAAA</strong> - Lieu de formation</p>
+                    <ul>
+                        <li>- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>- Aenean commodo leo diam. Nulla tristique nisl eget nisi tempor tincidunt. Proin non sapien nisi.</li>
+                    </ul>
+                </div>
+
+                <div class="formations">
+                    <h3>Formation 2</h3>
+                    <p><strong>AAAA - AAAA</strong> - Lieu de formation</p>
+                    <ul>
+                        <li>- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>- Aenean commodo leo diam. Nulla tristique nisl eget nisi tempor tincidunt. Proin non sapien nisi.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Formulaire -->
+            <section class="contact-form">
+                <h2>Contactez-moi</h2>
+                <form action="#" method="POST">
+                    <div class="form-champs">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-champs">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required placeholder="Votre email">
+                    </div>
+                    <div class="form-champs">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Votre message"></textarea>
+                    </div>
+                    <div class="form-champs">
+                        <label for="reason">Pour quelle raison me contactez-vous ?</label>
+                        <select id="reason" name="reason">
+                            <option value="general">Raison 1</option>
+                            <option value="job">Raison 2</option>
+                            <option value="feedback">Raison 3</option>
+                        </select>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-champs">
+                        <p>Je n'ai aucune imagination donc voici des checkbox</p>
+                        <label><input type="checkbox" name="checkbox" value="checkbox1"> Checkbox 1</label>
+                        <label><input type="checkbox" name="checkbox" value="checkbox2"> Checkbox 2</label>
+                        <label><input type="checkbox" name="checkbox" value="checkbox3"> Checkbox 3</label>
+                    </div>
+
+                    <!-- Radio buttons -->
+                    <div class="form-champs">
+                        <p>Comment souhaitez-vous être recontacté ?</p>
+                        <label><input type="radio" name="contact" value="methode1" required> Méthode 1</label>
+                        <label><input type="radio" name="contact" value="methode2"> Méthode 2</label>
+                        <label><input type="radio" name="contact" value="methode3"> Méthode 3</label>
+                    </div> 
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Téléphone :</strong> <a href="tel:+1234567890">01 23 45 67 89</a></p>
+                <p><strong>Email :</strong> <a href="mailto:monemail@example.com">monemail@example.com</a></p>
+            </div>
+            <div class="footer-social">
+                <a href="https://twitter.com/" target="_blank" class="social-icon twitter">
+                    <img src="icone_twitter.jpg" alt="Twitter" />
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" class="social-icon linkedin">
+                    <img src="icone_Linkedin.png" alt="LinkedIn" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

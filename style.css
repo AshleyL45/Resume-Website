@@ -1,0 +1,352 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas: "aside" "main";
+    gap: 20px;
+    margin: 20px;
+}
+
+/*Panneau de gauche */
+aside {
+    grid-area: aside;
+    background-color: #d6d2fd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 12em;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #4543aa;
+    margin-top: 30px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.competences ul {
+    padding: 0;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.table-container {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+table a {
+    color: #333;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+table tr:hover td {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Partie centrale */
+.main-content {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experiences, .formations {
+    margin-bottom: 20px;
+}
+
+.experiences h3, .formations h3 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.experiences ul, .formations ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+.contact-form .form-champs {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #240a6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #403366;
+}
+
+
+
+/* Media Queries */
+/* Pour les petits écrans (smartphones, < 768px) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "aside"
+            "main";
+    }
+
+    aside {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .main-content {
+        margin-top: 20px;
+    }
+
+    .profile img {
+        max-width: 120px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form select {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .contact-form button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .contact-form label {
+        font-size: 16px;
+    }
+}
+
+/* Pour les tablettes en mode paysage ou petits écrans (jusqu'à 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+            "aside main";
+    }
+
+    aside {
+        max-width: 100%;
+    }
+
+    .main-content {
+        margin-left: 20px;
+    }
+
+    .table-container {
+        margin-top: 30px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+}
+
+/* Pour les grands écrans (PC de bureau et tablettes en mode portrait, > 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "aside main";
+    }
+
+    .profile img {
+        max-width: 150px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #190749;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact {
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.footer-social img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-social a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
